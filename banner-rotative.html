@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="home.css?version=122">
+        <title>AGORA VAI - Teste de deploy automatico</title>
+    </head>
+    <body>
+   
+       <div id="carouselExampleIndicators" class="carousel slide px-2" data-ride="carousel" style="width: 100%;">
+        <div class="carousel-inner">
+            <div class="carousel-item banner-rot active">
+                <img src="img" class="w-100" alt="Slide 1" style="border-radius:10px;">
+            </div>
+            <div class="carousel-item banner-rot">
+                <img src="img/" class="w-100" alt="Slide 2" style="border-radius:10px;">
+            </div> 
+            <div class="carousel-item banner-rot">
+                <img src="img/" class="w-100" alt="Slide 3" style="border-radius:10px;">
+            </div>
+        </div>               
+    </div>
+        <script>
+           $(document).ready(function () {
+    
+    $('.carousel').carousel('cycle');
+    $('#categoryCarousel').carousel('pause');
+    $('.nav-item a').on('click', function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
+})
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+               <script type="text/javascript"  src="scripts.js"></script>    
+          </body>
+      </html>
